@@ -1,0 +1,85 @@
+*{ 
+    font-family: Comic sans-serif;
+}
+body{
+    background-image: url(../XD/ralsei.png);
+    background-color: blue;
+    margin: 0;
+}
+#title{
+    background-color: rgb(80, 33, 124);
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(96, 212, 42) ;
+    color: whitesmoke;
+}
+
+#container{ 
+    
+    background-color: green;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 0ex 5ex 5ex 5ex;
+}
+#info-main{
+    text-align: justify;
+    color: rgb(230, 233, 21);
+    padding: 10px;
+}
+#form{
+    padding: 5ex 0;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+.form-input{
+    border-color: black;
+    border-style: none none solid none;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    appearance: 0;
+    -moz-appearance: textfield; /* Tirar controle de input:number no Mozilla. */
+    padding: 2px;
+}
+.form-input::-webkit-inner-spin-button{ /* Tirar controle de input:number no Edge, Chrome, etc. */
+    appearance: 0;
+    -webkit-appearance: none;
+}
+.form-input-reg{
+    width: 255px;
+}
+.form-button{
+    margin: 5px 0 0;
+    padding: 4px;
+    border: solid 1px black;
+    border-radius: 8px;
+    width: 125px;
+    background-color: whitesmoke;
+}
+#calc-button:hover{
+    background-color: rgb(3, 182, 3);
+    color:white;
+}
+#cleaner-button:hover{
+    background-color: rgb(223, 13, 13);
+    color:white;
+}
+table{
+    background: #f0ec0b;
+   
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+}
+#table{
+    padding-top: 5ex;
+}
+#footer{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(37, 14, 167);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../XD/mine.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Calcular Médias</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Calculador de Medias </h1>
+        </div>
+    </header>
+
+    <div id="container">
+        <main>
+            <div id="main">
+                <div id="info-main">
+                    <h2> Cadastro do aluno </h2>
+                    <p>Escreva as informaçoes comfome o formulario pede.</p>
+                </div>
+                
+                <div id="form">
+                    <label for="nome">Nome: <br><input type="text" id="nome" class="form-input form-input-reg" placeholder="Digite seu nome"></label> <br>
+                    <label for="matricula">Matricula: <br><input type="text" id="matricula" class="form-input form-input-reg" placeholder="Digite sua matrícula"></label> <br> <br>
+                    <label for="nota1"> Nota 1: <input type="number" id="nota1" class="form-input" placeholder="Digite sua nota"></label>  <br>
+                    <label for="nota2"> Nota 2: <input type="number" id="nota2" class="form-input" placeholder="Digite sua nota"></label> <br>
+                    <label for="nota3"> Nota 3: <input type="number" id="nota3" class="form-input" placeholder="Digite sua nota"></label> <br> <br>
+                    <input type="submit" value="Confirmar" class="form-button" id="calc-button">
+                    <input type="button" value="Limpar" class="form-button" id="cleaner-button">
+                </div>
+
+                <div id="table">
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Matricula</th>
+                            <th>Media</th>
+                        </tr>
+                        <tbody id="build-table">
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <p>OBS: O java esta quebrado de alguma forma e nao aguento mais pesquisa :P</p>
+        </div>
+    </footer>
+
+    <script src="../js/aluno.js"></script>
+
+</body>
+</html>
