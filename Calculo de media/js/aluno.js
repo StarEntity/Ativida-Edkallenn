@@ -1,4 +1,4 @@
-class Aluno { // Classe Aluno desenvolvida em sala de aula
+class Aluno { 
     nome;
     matricula;
     nota1;
@@ -28,7 +28,7 @@ class Aluno { // Classe Aluno desenvolvida em sala de aula
     
 }
 
-// Capturando variáveis nota1, nota2, nota3, nome, matricula e botões
+
 
 let alunoNome = document.querySelector("#nome").value
 let alunoMatricula = document.querySelector("#matricula").value
@@ -40,14 +40,11 @@ let calcButton = document.querySelector('#calc-button')
 let cleanerButton = document.querySelector('#cleaner-button')
 let toTable = document.querySelector("#build-table")
 
-// function calcularMedia(n1, n2, n3) { // Retirando essa função do código e deixando direto na classe deu erro falando que a função não foi declarada. Deixando aqui ela calcula a média.
-//     return (n1 + n2 + n3)/3
-// }
 
-calcButton.addEventListener('click', function(event){  // Ler click no botão Confirmar
+calcButton.addEventListener('click', function(event){  
     event.preventDefault()
     console.log('Atribuindo valores...')
-// Capturando o valor dos inputs e convertendo em Float para armazenar no objeto
+
     let nome = (alunoNome)
     let matricula = (alunoMatricula)
     let nota1 = parseFloat(alunoNota1)
@@ -58,24 +55,20 @@ calcButton.addEventListener('click', function(event){  // Ler click no botão Co
     console.log(nota1)
     console.log(nota2)
     console.log(nota3)
-    // Calculando média...
     console.log("Media: " + media)
     console.log("Construindo tabela...") 
-    toTable.innerHTML += // Método repsonsável por construir a tabela abaixo do formulário.
+    toTable.innerHTML += 
     `<tr>
     <td>${nome}</td>
     <td>${matricula}</td>
     <td>${media}</td>`
 })
 
-cleanerButton.addEventListener('click', function(){ // Método para limpar o formulário. OBS: Esse método NÃO apaga as tabelas.
+cleanerButton.addEventListener('click', function(){ 
     nome.value = ""
     matricula.value = ""
     nota1.value = ""
     nota2.value = ""
     nota3.value = ""
 })
-// OBS: Houve  um problema grave na execução do código no navegador.
-// A classe não é retornada no conforme o usuário pressiona "Confirmar", o algoritmo vai repetindo a mesma coisa infinitamente ou até você fazer alguma alteração no script ou reiniciar a página.
-// Fazendo alguma alteração no script é como se mudasse o valor da classe.
-// Não sei se fazer algum array daria certo, não testei, tô com muito sono kk
+
